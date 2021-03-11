@@ -1,3 +1,30 @@
 <div class="home-page js-home-page">
-    <h1>Dies ist die Startseite</h1>
+    <div class="main-container">
+
+
+        <div class="startpage-container" id="home" data-navigation="home">
+            {% include ('module/startpage.twig') %}
+        </div>
+
+        {% include ('module/slider.twig') %}
+
+        <div class="sidebar-container-in-main-container">
+            {% include ('module/sidebar.twig') %}
+        </div>
+
+        <div class="praxis-container" id="praxis" data-navigation="praxis">
+            {% include ('module/praxis.twig') %}
+        </div>
+
+        <div class="team-container" id="team" data-navigation="team">
+            {% include ('module/team.twig') %}
+        </div>
+
+        <div class="anfahrt-container" id="anfahrt" data-navigation="anfahrt">
+            {% include ('module/anfahrt.twig') %}
+        </div>
+    </div>
+</div>
+<div class="sidebar-container">
+    {% include ('module/sidebar.twig') %}
 </div>

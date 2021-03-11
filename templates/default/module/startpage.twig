@@ -1,0 +1,19 @@
+<div class="willkommen">
+    <h2>Willkommen</h2>
+
+    <p>auf der Website der Urologischen Praxis Holger Müller.
+        Für Fragen und Terminvereinbarungen stehen wir während der angegebenen Sprechzeiten gern zur Verfügung.
+    </p>
+</div>
+{% if tip %}
+<div class="tip">
+
+            <h3>{{ tip.getHeadline }}</h3>
+            <p>{{ tip.getText|nl2br }}</p>
+
+    {#<h3>Hinweis</h3>
+    <p>Am Montag, den 13.8.2018 findet keine Nachmittagsprechstunde statt. Vertretung: <br/>
+        Praxis DM Jörg Schmollack, König-Heinrich-Str.40, 06217 Merseburg<br/>
+        Tel.: 03461/200009</p>#}
+</div>
+{% endif %}
